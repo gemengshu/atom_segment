@@ -7,6 +7,7 @@ Load training and testing dataset
 from __future__ import print_function
 import numpy as np
 from os.path import exists, join
+import torch.utils.data as data
 from torch.utils.data import DataLoader
 from torchvision.transforms import Compose, CenterCrop, ToTensor
 from os import listdir
