@@ -61,8 +61,7 @@ class TrainModel():
             self.unet = UNet(self.colordim)
             self.criterion = nn.MSELoss()
 
-        self.optimizer = optim.SGD(self.unet.parameters(), lr = self.lr, momentum = 0.9,
-        weight_decay = 0.0001)
+        self.optimizer = optim.SGD(self.unet.parameters(), lr = self.lr, momentum = 0.9, weight_decay = 0.0001)
 
 
     def __dir_exist(self, cur_dir):
