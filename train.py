@@ -115,7 +115,7 @@ class TrainModel():
                 input  = input.cuda()
                 target = target.cuda()
 
-            optimizer.zero_grad()
+            self.optimizer.zero_grad()
             input  = self.unet(input)
             loss = self.criterion(input, target)
             epoch_loss += (loss.data[0])
