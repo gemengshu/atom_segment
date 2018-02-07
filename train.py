@@ -5,6 +5,7 @@ Load model and provide train function
 """
 from model import UNet
 from utils import DatasetFromFolder
+import os
 from os.path import exists, join
 import torch
 
